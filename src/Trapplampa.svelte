@@ -9,7 +9,7 @@
   function sendBlinkOff() {
     let url = 'http://tasmota-0f5bba-7098.lan/cm?cmnd=' + encodeURIComponent('power1 4');
     console.log(url);
-    fetch(url, { mode: 'no-cors'});
+    fetch(url, { mode: 'no-cors', referrerPolicy: "unsafe_url" });
   }
 
 </script>
