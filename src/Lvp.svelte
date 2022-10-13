@@ -8,7 +8,7 @@
     console.log(cmd);
     let url = irBlasterUrl + '/cm?cmnd=' + encodeURIComponent(cmd);
     console.log(url);
-    fetch(url, { mode: 'no-cors', referrerPolicy: "unsafe_url" });
+    fetch(url, { mode: 'no-cors', referrerPolicy: "unsafe-url" });
   }
 
   function getLvpCmd(turnOrKeepOn, temp) {
